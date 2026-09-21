@@ -1,0 +1,54 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#dashboard {
+  width: 100%;
+  height: 100dvh;
+  overflow: auto;
+  background: #eee;
+
+  .vue-grid-layout {
+    width: 100%;
+    min-height: 100%;
+    background: #eee;
+  }
+
+  .vue-grid-item {
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+
+  .layoutJSON {
+    background: #ddd;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .columns {
+    columns: 120px;
+  }
+
+  #widget-spotify {
+    background: url("/placeholders/spotify.png") center / contain no-repeat;
+  }
+
+  #widget-news {
+    background: url("/placeholders/ns.png") center / contain no-repeat;
+  }
+
+  #widget-weather {
+    background: url("/placeholders/weather.png") center / contain no-repeat;
+  }
+
+  #widget-calendar {
+    background: url("/placeholders/calendar.png") center / contain no-repeat;
+  }
+}
