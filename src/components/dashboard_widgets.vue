@@ -42,4 +42,3 @@ const state = reactive({
     </GridLayout>
   </main>
 </template>
-

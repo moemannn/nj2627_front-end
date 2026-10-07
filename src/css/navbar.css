@@ -1,15 +1,19 @@
+.navbar-left{
+  left: .5%;
+}
+.navbar-right{
+  right: .5%;
+}
 nav {
-  /* Glass appearance */
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px) saturate(150%);
   -webkit-backdrop-filter: blur(10px) saturate(150%);
 
   position: absolute;
-  left: .5%;
   bottom: 1%;
   z-index: 10;
 
-  width: 120px;
+  width: 35px;
   min-height: 30px;
   max-height: 30px;
   margin: 0;
@@ -35,12 +39,13 @@ nav {
   overflow: hidden;
 
   transition:
-          max-height 0.35s ease,
-          box-shadow 0.35s ease;
+          max-height 0.55s ease,
+          box-shadow 0.55s ease;
 }
 
 nav.open {
   max-height: min(400px, calc(100dvh - 2%));
+  width: 120px;
 }
 
 nav ul {
@@ -59,9 +64,9 @@ nav ul {
 
   transition:
           opacity 0.2s ease,
-          visibility 0s linear 0.35s;
+          visibility 0s linear 0.55s;
 
-  margin-bottom: 50% !important;
+  margin-bottom: 50%;
 }
 
 nav.open ul,
@@ -91,45 +96,15 @@ nav ul li {
   transform: translateY(12px);
 
   transition:
-          opacity 0.25s ease,
-          transform 0.25s ease,
-          background 0.2s ease;
+          opacity 0.55s ease,
+          transform 0.55s ease,
+          background 0.5s ease;
 }
 
 nav.open ul li,
 nav ul.open li {
   opacity: 1;
   transform: translateY(0);
-}
-
-nav.open ul li:nth-child(1),
-nav ul.open li:nth-child(1) {
-  transition-delay: 0.04s;
-}
-
-nav.open ul li:nth-child(2),
-nav ul.open li:nth-child(2) {
-  transition-delay: 0.08s;
-}
-
-nav.open ul li:nth-child(3),
-nav ul.open li:nth-child(3) {
-  transition-delay: 0.12s;
-}
-
-nav.open ul li:nth-child(4),
-nav ul.open li:nth-child(4) {
-  transition-delay: 0.16s;
-}
-
-nav.open ul li:nth-child(5),
-nav ul.open li:nth-child(5) {
-  transition-delay: 0.2s;
-}
-
-nav.open ul li:nth-child(6),
-nav ul.open li:nth-child(6) {
-  transition-delay: 0.24s;
 }
 
 nav .profile-container {
@@ -157,9 +132,10 @@ nav .profile-container:hover,
 nav .profile-container:focus-visible,
 nav ul li:hover,
 nav ul li:focus-within {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
+  color:white;
 }
 
 nav ul li:hover,
@@ -167,49 +143,11 @@ nav ul li:focus-within {
   border-radius: 8px;
 }
 
-nav a {
-  display: block;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
 
 nav a:focus-visible,
 nav .profile-container:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.9);
   outline-offset: -3px;
-}
-
-
-/* --------------------------------------------------------------
-Dashboard area
--------------------------------------------------------------- */
-
-#dashboard {
-  flex: 1;
-  width: 100%;
-  height: 100dvh;
-  overflow: auto;
-}
-
-#dashboard .vue-grid-layout {
-  width: 100%;
-  min-height: 100%;
-}
-
-#dashboard .vue-grid-item {
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-
-#dashboard .layoutJSON {
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-#dashboard .columns {
-  columns: 120px;
 }
 
 @media (prefers-reduced-motion: reduce) {

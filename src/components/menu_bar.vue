@@ -10,7 +10,7 @@ const isOpen = ref(false)
         integrity="sha384-…"
         crossorigin="anonymous">
 
-  <nav :class="{ open: isOpen }" @click.self="isOpen = false">
+  <nav :class="{ open: isOpen }" @click.self="isOpen = false" class="navbar-left">
     <ul :class="{ open: isOpen }"  @click.self="isOpen = false">
       <li>Home</li>
       <li>Calendar</li>
@@ -24,3 +24,4 @@ const isOpen = ref(false)
     </div>
   </nav>
 </template>
+
