@@ -15,11 +15,11 @@ const state = reactive({
 </script>
 
 <template>
-  <div id="dashboard" class="dashboard">
+  <main id="dashboard" class="dashboard">
     <GridLayout
         v-model:layout="state.layout"
-        :col-num="50"
-        :row-height="50"
+        :col-num="100"
+        :row-height="10"
         :margin="[2, 2]"
         :is-draggable="state.draggable"
         :is-resizable="state.resizable"
@@ -40,6 +40,5 @@ const state = reactive({
         <div class="widget-content"></div>
       </GridItem>
     </GridLayout>
-  </div>
+  </main>
 </template>
-
