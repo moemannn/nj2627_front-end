@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import DashboardWidgets from './components/dashboard_widgets.vue'
-import MenuBar from "./components/menu_bar.vue";
-import NotifcationBar from "./components/notfication_bar.vue";
+import Dashboard from '@/components/Dashboard.vue'
+import MenuBar from "@/components/MenuBar.vue";
+import NotificationBar from "@/components/NotificationBar.vue";
 </script>
 <template>
   <div id="app">
     <MenuBar />
-    <DashboardWidgets />
-    <NotifcationBar />
+    <Dashboard />
+    <NotificationBar />
   </div>
 </template>
